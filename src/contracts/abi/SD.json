@@ -1,0 +1,440 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			}
+		],
+		"name": "depositETH",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amt",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			}
+		],
+		"name": "depositUSDT",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "var_staking_token_address",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "var_staking_end_timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "var_deposit_start_timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "var_deposit_end_timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "var_tiers",
+				"type": "uint256[]"
+			}
+		],
+		"name": "initPool",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amt",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			}
+		],
+		"name": "stake",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amt",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			}
+		],
+		"name": "unstake",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "withdrawETH",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "token_contract_addr",
+				"type": "address"
+			}
+		],
+		"name": "withdrawToken",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "hodler",
+				"type": "address"
+			}
+		],
+		"name": "get_deposits_eth",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "hodler",
+				"type": "address"
+			}
+		],
+		"name": "get_deposits_usdt",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "hodler",
+				"type": "address"
+			}
+		],
+		"name": "get_effective_staked_tokens",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "hodler",
+				"type": "address"
+			}
+		],
+		"name": "get_staked_tokens",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			}
+		],
+		"name": "getFundTxCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sale_token",
+				"type": "address"
+			}
+		],
+		"name": "getStakeHolders",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address payable",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Pools",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "staking_token_address",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "staking_end_timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "deposit_start_timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "deposit_end_timestamp",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "tier1_stake_tokens_min",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier1_deposit_max_usdt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier1_deposit_max_eth",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier2_stake_tokens_min",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier2_deposit_max_usdt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier2_deposit_max_eth",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier3_stake_tokens_min",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier3_deposit_max_usdt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier3_deposit_max_eth",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier4_stake_tokens_min",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier4_deposit_max_usdt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tier4_deposit_max_eth",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Tiers",
+				"name": "tiers_settings",
+				"type": "tuple"
+			},
+			{
+				"internalType": "uint256",
+				"name": "txCount",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "usdt_address",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
